@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>kendo</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.form.js"></script>
+		<script type="text/javascript" > 
+			function addLamp() {
+			  	//var options = {
+					//type: "post",
+					//url: "http://127.0.0.1:8192/xingyun/addlamp",
+					//dataType: "json", 
+					//success: rejie,
+					//error: function(){console.info("error");}
+				//};
+				var options = {
+					type: "post",
+					url: "http://127.0.0.1:8192/xingyun/addlamp",
+					dataType: "json", 
+					success: rejie,
+					error: function(){alert();}
+				
+				};
+				$('#addForm').ajaxSubmit(options);
+				return false;
+		 	 }
+			function rejie(msg) {
+			  
+			   console.info("success");
+			}
+		
+		
+		</script>
+	
+	</head>
+	<body>
+		<div id="container">
+
+		
+			<div id="banner">
+				
+			</div>
+
+			
+			<div id="biuuu" class="ddsmoothmenu">
+			</div>
+
+			<div id="zw">
+			
+				  <div id="add" >
+					
+							<form id="addForm" method="post">
+
+								<table id="lamp_table_add" border="0" cellspacing='0'
+									cellpadding='0' width="80%" align="center">
+									
+									<tr>
+										<td align="left" width="120px">
+											编号
+										</td>
+										<td align="left">
+											<input id="lampNo" name="lampNo" maxLength="20"
+												style="width: 155px;">
+											<em id="lampNo_add_warn"></em>
+										</td>
+									</tr>
+								  
+									
+
+									<tr>
+										<td align="left" width="120px">
+											类型:
+										</td>
+										<td align="left">
+											<input id="lampModel" name="lampModel"
+												maxLength="20" style="width: 155px;">
+											<em id="lampModel_add_warn"></em>
+										</td>
+									</tr>
+
+									<tr>
+										<td align="left" width="120px">
+											类别:
+										</td>
+										<td align="left">
+											<select id="lampType" name="lampType"
+												style="width: 155px; height: 22px;">
+												<option value="1">
+													LED
+												</option>
+												<option value="2">
+													HID
+												</option>
+											</select>
+											<em id="lampType_add_warn"></em>
+										</td>
+									</tr>
+
+									<tr>
+										<td align="left" width="120px">
+											额定电压:
+										</td>
+										<td align="left">
+											<input id="ratedVoltage" name="ratedVoltage"
+												style="width: 155px;">
+											<em id="ratedVoltage_add_warn"></em>
+										</td>
+									</tr>
+
+									<tr>
+										<td align="left" width="120px">
+											额定电流:
+										</td>
+										<td align="left">
+											<input id="ratedCurrent" name="ratedCurrent"
+												style="width: 155px;">
+											<em id="ratedCurrent_add_warn"></em>
+										</td>
+									</tr>
+
+									<tr>
+										<td align="left" width="120px">
+											额定功率:
+										</td>
+										<td align="left">
+											<input id="ratedPower" name="ratedPower"
+												style="width: 155px;">
+											<em id="ratedPower_add_warn"></em>
+										</td>
+									</tr>
+
+									<tr>
+										<td align="left" width="120px">
+											额定温度:
+										</td>
+										<td align="left">
+											<input id="ratedTemp" name="ratedTemp"
+												style="width: 155px;">
+											<em id="ratedTemp_add_warn"></em>
+										</td>
+									</tr>
+
+									<tr>
+										<td align="left" width="120px">
+											工作时间:
+										</td>
+										<td align="left">
+											<input id="workLife" name="workLife"
+												style="width: 155px;">
+											<em id="workLife_add_warn"></em>
+										</td>
+									</tr>
+
+									<tr>
+										<td align="left" width="120px">
+											使用时间:
+										</td>
+										<td align="left">
+											<input id="usedTime" name="usedTime"
+												style="width: 155px;">
+											<em id="usedTime_add_warn"></em>
+										</td>
+									</tr>
+
+									<tr>
+										<td align="left" width="120px">
+											临界
+										</td>
+										<td align="left">
+											<input id="threshold1" name="threshold1"
+												style="width: 155px;">
+											<em id="threshold1_add_warn"></em>
+										</td>
+									</tr>
+
+									<tr>
+										<td align="left" width="120px">
+											临界2
+										</td>
+										<td align="left">
+											<input id="standardBrightness"
+												name="standardBrightness" style="width: 155px;">
+											<em id="standardBrightness_add_warn"></em>
+										</td>
+									</tr>
+
+									<tr>
+										<td align="left" width="120px">
+											锟斤拷前锟秸讹拷:
+										</td>
+										<td align="left">
+											<input id="currentBrightness"
+												name="currentBrightness" style="width: 155px;">
+											<em id="currentBrightness_add_warn"></em>
+										</td>
+									</tr>
+
+									<tr>
+										<td align="left" width="120px">
+											锟秸度告警锟斤拷锟斤拷:
+										</td>
+										<td align="left">
+											<input id="threshold2" name="threshold2"
+												style="width: 155px;">
+											<em id="threshold2_add_warn"></em>
+										</td>
+									</tr>
+
+									<tr>
+										<td align="left" width="120px">
+											光源类型:
+										</td>
+										<td align="left">
+											<input id="lightType" name="lightType"
+												maxLength="20" style="width: 155px;">
+											<em id="lightType_add_warn"></em>
+										</td>
+									</tr>
+									
+									
+									
+									<tr>
+										<td align="left" width="120px">
+											组别
+										</td>
+										<td align="left">
+											<input id="groupnum" name="groupnum"
+												style="width: 155px;">
+											<em id="groupnum_add_warn"></em>
+										</td>
+									</tr>
+									
+									<tr>
+										<td align="left" width="120px">
+											全半夜
+										</td>
+										<td align="left">
+											<select id="wholeorhalf" name="wholeorhalf"
+												style="width: 158px; height: 22px;">
+												<option value=1>
+													半夜灯
+												</option>
+												<option value=2>
+													全夜灯
+												</option>
+											</select>
+											<em id="wholeorhalf_add_warn"></em>
+										</td>
+									</tr>
+								    
+									
+
+									<tr>
+										<td align="center" colspan="2">
+											<br>
+											<input type="submit" onclick="return addLamp()" value="提交"
+												style="font-size: 12px" />
+											&nbsp;&nbsp;&nbsp;&nbsp;
+											<input type="reset" value="清空" style="font-size: 12px" />
+											&nbsp;&nbsp;&nbsp;&nbsp;
+											<input type="submit" onclick="return close1()" value="关闭"
+												style="font-size: 12px" />
+										</td>
+									</tr>
+								</table>
+
+							</form>
+						
+
+				
+				
+			
+			  
+
+			</div>
+			</div>
+	
+
+		
+			<div id="footer">
+				&copy;航通
+			</div>
+		
+		</div>
+		
+	</body>
+</html>

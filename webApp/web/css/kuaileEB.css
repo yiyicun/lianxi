@@ -1,0 +1,92 @@
+#jilu{
+   border-left:1px solid #99bbe8;
+   border-right:1px solid #99bbe8;
+   padding-top:5px;
+   text-align:center;
+}
+
+#jiluTable,#countTable{
+ 
+	border:solid #add9c0;
+	border-width:1px 0px 0px 1px;
+
+}
+
+#countTable td{
+  width:24px;
+  text-align:center;
+  border:solid #add9c0;
+  border-width:0px 1px 0px 0px; 
+}
+
+#mtb{
+ 
+  background:#eeeeee;
+
+}
+
+
+#jiluTable td{
+
+  width:24px;
+  text-align:center;
+  border:solid #add9c0;
+  border-width:0px 1px 1px 0px; 
+ 
+}
+
+#jiluTable td.qihao{
+
+  width:40px;
+  
+
+}
+
+#countTable td{
+	
+	width:30px;
+}
+
+#countTable td.one{
+
+  width:662px;
+
+}
+
+
+#countTable td.two{
+
+  width:415px;
+
+}
+
+
+#jiluTable td.third{
+
+  width:40px;
+  
+
+}
+
+
+#yema a:hover {
+    color: #003366;
+    text-decoration: none;
+}
+#yema a:link {
+    color: #3366CC;
+    text-decoration: none;
+  
+}
+#yema a:visited {
+    color: #3366CC;
+    text-decoration: none;
+}
+
+
+
+#footer{
+	clear: both;
+	border-top:1px solid #99bbe8;
+	text-align: center;
+}
