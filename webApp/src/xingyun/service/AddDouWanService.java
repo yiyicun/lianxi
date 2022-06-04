@@ -979,7 +979,7 @@ public class AddDouWanService {
                 e.printStackTrace();
             }
             try {
-                System.out.println("第弟弟" + i + "爷爷");
+                System.out.println("第" + i + "页");
                 ss = gebi.keepsession(
                         "http://47.75.107.11:5397/sgame.php?act=8&page="+i+"&t=" + tString, session,
                         "http://47.75.107.11:5397/game.php");
