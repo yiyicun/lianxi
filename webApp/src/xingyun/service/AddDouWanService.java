@@ -956,7 +956,7 @@ public class AddDouWanService {
 
         DouWanDAO dao = new DouWanDAO();
         Long max = Long.valueOf(dao.findMaxJnd28());
-        System.out.println(max);
+        System.out.println("开始最大期数:"+max);
         DouwanHtml gebi = new DouwanHtml();
         String[] returnIssue = new String[2];
 
