@@ -152,8 +152,6 @@ public class InfoMxJndebService {
 				
 				da++;
 			}
-			
-
 		}
 		System.out.println("共" + list.size() + "条记录");
 		System.out.println("大小比:" +da + "次:" +  (list.size() - da) + "次");
