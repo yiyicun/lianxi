@@ -3,9 +3,6 @@ package niuke.str;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
 
 
 //HJ2 计算某字符出现次数
