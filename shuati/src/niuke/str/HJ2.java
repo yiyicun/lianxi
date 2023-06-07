@@ -19,7 +19,7 @@ public class HJ2 {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String str=br.readLine();
+        String str=br.readLine();// 读第一行
         char[] chars = str.toLowerCase().toCharArray();
         char c = br.readLine().toLowerCase().charAt(0);
         int count = 0;
